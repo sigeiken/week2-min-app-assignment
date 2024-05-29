@@ -14,6 +14,11 @@ document
         alert("Please enter a valid month.");
         return;
       }
+
+      if (!isYearValid(dateStr)) {
+        alert("Please enter a valid year.");
+        return;
+      }
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const dayOfWeek = birthdate.getUTCDay();
     const akanNames = {
