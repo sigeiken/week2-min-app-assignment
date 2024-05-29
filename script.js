@@ -37,6 +37,9 @@ document
     document.getElementById(
       "result"
     ).innerText = `Your Akan name is: ${akanName}`;
+
+    var form = document.getElementById("form");
+    form.reset();
   });
 
   function formatDateString(dateStr) {
