@@ -2,7 +2,14 @@ document
   .getElementById("form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
+
     let dateStr = document.getElementById("birthdate").value;
+
+    if (!isDayValid(dateStr)) {
+        alert("Please enter a valid day.");
+        return;
+      }
+      
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const dayOfWeek = birthdate.getUTCDay();
     const akanNames = {
