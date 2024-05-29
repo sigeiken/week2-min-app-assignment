@@ -39,3 +39,7 @@ document
     let year = dateArray[2];
     return year > 1900 && year < new Date().getFullYear() ? true : false;
   }
+
+  function isDateValid(birthdate) {
+    return !isNaN(new Date(birthdate));
+  }
