@@ -27,3 +27,9 @@ document
     let day = dateArray[0];
     return day <= 0 || day > 31 ? false : true;
   }
+
+  function isMonthValid(dateStr) {
+    let dateArray = dateStr.split("/");
+    let month = dateArray[1];
+    return month <= 0 || month > 12 ? false : true;
+  }
