@@ -21,3 +21,9 @@ document
     let newDate = `${dateArray[2]}/${dateArray[1]}/${dateArray[0]}`;
     return newDate;
   }
+
+  function isDayValid(dateStr) {
+    let dateArray = dateStr.split("/");
+    let day = dateArray[0];
+    return day <= 0 || day > 31 ? false : true;
+  }
