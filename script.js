@@ -33,3 +33,9 @@ document
     let month = dateArray[1];
     return month <= 0 || month > 12 ? false : true;
   }
+
+  function isYearValid(dateStr) {
+    let dateArray = dateStr.split("/");
+    let year = dateArray[2];
+    return year > 1900 && year < new Date().getFullYear() ? true : false;
+  }
