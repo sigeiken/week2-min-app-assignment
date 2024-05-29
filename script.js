@@ -21,6 +21,10 @@ document
       }
 
       const birthdate = new Date(formatDateString(dateStr));
+      if (!isDateValid(birthdate)) {
+        alert("Please enter a valid birthdate.");
+        return;
+      }
 
     const gender = document.querySelector('input[name="gender"]:checked').value;
     const dayOfWeek = birthdate.getUTCDay();
