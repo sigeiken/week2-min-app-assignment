@@ -15,3 +15,9 @@ document
       "result"
     ).innerText = `Your Akan name is: ${akanName}`;
   });
+
+  function formatDateString(dateStr) {
+    let dateArray = dateStr.split("/");
+    let newDate = `${dateArray[2]}/${dateArray[1]}/${dateArray[0]}`;
+    return newDate;
+  }
