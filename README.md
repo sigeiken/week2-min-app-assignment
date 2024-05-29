@@ -13,7 +13,11 @@ the day in the week they were born.
 
 **Setup Instructions**
 
+Clone the project and load index.html file.
+
 **Link**
+
+https://sigeiken.github.io/week2-min-app-assignment/
 
 Copyright (c) 2021 Othneil Drew
 
